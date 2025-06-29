@@ -95,7 +95,7 @@ body {
 
 .hamburger span {
     width: 30px;
-    height: 3px;
+    height: 2px;
     background: var(--text-color);
     transition: var(--transition);
 }
@@ -284,6 +284,13 @@ body {
     }
     .hero-content p {
         font-size: 1rem;
+    }
+    .header {
+        height: 70px; /* Set your desired height */
+        padding: 0 5%;
+    }
+    .logo img {
+        height: 40px; /* Adjust logo size for mobile */
     }
 }
 
