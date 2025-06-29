@@ -218,7 +218,7 @@ body {
     gap: 2rem;
 }
 .btn {
-    padding: 0.5rem 1.8rem;
+    padding: 0.22rem 1.2rem;
     color: var(--white);
     border-radius: 8px;
     text-decoration: none;
@@ -241,7 +241,7 @@ body {
     font-size: 1.5rem;
     margin-bottom: 0; 
     margin-left: 0.5rem; 
-    line-height: 1;   
+    /* line-height: 1;    */
     vertical-align: middle;
 }
 
