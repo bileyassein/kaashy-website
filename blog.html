@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Kaashy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .logo-img {
+            height: 50px;
+            margin-top: 5px;
+        }
+        .blog-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8rem 5% 5rem;
+            text-align: center;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 4rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .blog-content {
+            padding: 1.5rem;
+        }
+        .blog-date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .blog-title {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .blog-excerpt {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        .read-more {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="assets/logoFull.svg" alt="Kaashy Logo" class="logo-img">
+        </div>
+        <nav class="nav-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="close-btn">×</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <h1 data-aos="fade-up">Latest Insights</h1>
+        <p data-aos="fade-up" data-aos-delay="100">Stay updated with the latest trends in mobile money and data solutions</p>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid">
+        <article class="blog-card" data-aos="fade-up">
+            <img src="art.jpg" alt="Mobile Money Revolution" class="blog-image">
+            <div class="blog-content">
+                <div class="blog-date">March 15, 2024</div>
+                <h2 class="blog-title">The Rise of Mobile Money in Africa: A Digital Revolution</h2>
+                <p class="blog-excerpt">Exploring the growth of mobile money across Africa, with over 500 million registered accounts and daily transaction volumes exceeding $1 billion.</p>
+                <a href="articles/mobile-money-revolution.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="art.jpg" alt="Data Bundles Guide" class="blog-image">
+            <div class="blog-content">
+                <div class="blog-date">March 10, 2024</div>
+                <h2 class="blog-title">Smart Data Bundle Selection: A Complete Guide</h2>
+                <p class="blog-excerpt">Learn how to choose the perfect data bundle for your needs, from daily browsing to video streaming and online gaming.</p>
+                <a href="articles/data-bundle-guide.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+            <img src="art.jpg" alt="Mobile Security" class="blog-image">
+            <div class="blog-content">
+                <div class="blog-date">March 5, 2024</div>
+                <h2 class="blog-title">Securing Your Mobile Money: Best Practices for 2024</h2>
+                <p class="blog-excerpt">Essential security measures for mobile money transactions, including authentication, device security, and fraud prevention.</p>
+                <a href="articles/mobile-security.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+            <img src="art.jpg" alt="Mobile Security" class="blog-image">
+            <div class="blog-content">
+                <div class="blog-date">March 5, 2024</div>
+                <h2 class="blog-title">Securing Your Mobile Money: Best Practices for 2024</h2>
+                <p class="blog-excerpt">Essential security measures for mobile money transactions, including authentication, device security, and fraud prevention.</p>
+                <a href="articles/mobile-security.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kaashy</h3>
+                <p>Your trusted partner for mobile money and data solutions.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">GDPR</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> support@kaashy.com</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kaashy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

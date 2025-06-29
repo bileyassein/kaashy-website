@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Kaashy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .logo-img {
+            height: 50px;
+            margin-top: 5px;
+        }
+        .features-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8rem 5% 5rem;
+            text-align: center;
+        }
+        .feature-section { padding: 5rem 5%; }
+        .feature-section:nth-child(even) { background: var(--light-gray); }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .feature-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        .faq-section { padding: 5rem 5%; background: white; }
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item {
+            margin-bottom: 1rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 1.5rem;
+            background: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .faq-item.active .faq-answer {
+            padding: 1.5rem;
+            max-height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="assets/logoFull.svg" alt="Kaashy Logo" class="logo-img">
+        </div>
+        <nav class="nav-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html" class="active">Features</a></li>
+                <!-- <li><a href="blog.html">Blog</a></li> -->
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="close-btn">×</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+    <!-- Features Hero -->
+    <section class="features-hero">
+        <h1 data-aos="fade-up">Powerful Features</h1>
+        <p data-aos="fade-up" data-aos-delay="100">Discover how Kaashy can simplify your mobile money and data needs</p>
+    </section>
+
+    <!-- Main Features -->
+    <section class="feature-section">
+        <div class="feature-grid">
+            <div class="feature-item" data-aos="fade-up">
+                <i class="fas fa-exchange-alt"></i>
+                <h3>Wallet Swapping</h3>
+                <p>Instantly transfer money between different mobile money wallets with competitive rates.</p>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-wifi"></i>
+                <h3>Data Bundles</h3>
+                <p>Purchase data bundles from all major providers with instant activation.</p>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-history"></i>
+                <h3>Transaction History</h3>
+                <p>Keep track of all your transactions with detailed history and receipts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Features -->
+    <section class="feature-section">
+        <h2 data-aos="fade-up">More Features</h2>
+        <div class="feature-grid">
+            <div class="feature-item" data-aos="fade-up">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure Transactions</h3>
+                <p>Bank-grade security with end-to-end encryption for all transactions.</p>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-bell"></i>
+                <h3>Instant Notifications</h3>
+                <p>Real-time notifications for all your transactions and data purchases.</p>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Round-the-clock customer support for all your queries and concerns.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq-section">
+        <h2 data-aos="fade-up">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    How does wallet swapping work?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Kaashy allows you to transfer money between different mobile money wallets instantly. Simply select your source and destination wallets, enter the amount, and confirm the transaction. The transfer is completed within seconds.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq-question">
+                    Which mobile money providers are supported?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Kaashy supports all major mobile money providers in your region. This includes M-Pesa, Airtel Money, Tigo Pesa, and more. We're constantly adding support for new providers.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-question">
+                    How secure are my transactions?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>All transactions on Kaashy are protected with bank-grade security measures, including end-to-end encryption and multi-factor authentication. Your money and personal information are always safe with us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kaashy</h3>
+                <p>Your trusted partner for mobile money and data solutions.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">GDPR</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> support@kaashy.com</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kaashy. All rights reserved.</p>
+        </div>
+    </footer> -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <img src="assets/logoFull white.svg" alt="Kaashy Logo" class="footer-logo">
+                    <p>Your all-in-one financial solution for mobile money, data bundles, and secure transactions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/features.html">Features</a></li>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="pages/legal-pages/privacy.html">Privacy Policy</a></li>
+                        <li><a href="pages/legal-pages/terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kaashy. All rights reserved.</p>
+                <!-- <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html> 
