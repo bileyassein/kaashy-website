@@ -33,6 +33,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    height: 70px;
 }
 
 .logo h1 {
@@ -81,7 +82,7 @@ body {
 }
 
 .logo img {
-    height: 50px;
+    height: 40px;
     margin-top: 5px;
 }
 
