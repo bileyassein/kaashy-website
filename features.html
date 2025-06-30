@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon_io/site.webmanifest">
     <link rel="shortcut icon" href="assets/favicon_io/favicon.ico">
-    
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -25,6 +25,10 @@
             color: white;
             padding: 8rem 5% 5rem;
             text-align: center;
+        }
+        .features-hero p {
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
         }
         .feature-section { padding: 5rem 5%; }
         .feature-section:nth-child(even) { background: var(--light-gray); }
@@ -41,6 +45,15 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             transition: var(--transition);
         }
+        .feature-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .feature-item h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+        }
         .feature-item:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -52,6 +65,9 @@
             border: 1px solid #eee;
             border-radius: 8px;
             overflow: hidden;
+        }
+        .faq-section h2 {
+            margin-bottom: 2rem;
         }
         .faq-question {
             padding: 1.5rem;
@@ -108,7 +124,8 @@
     <!-- Features Hero -->
     <section class="features-hero">
         <h1 data-aos="fade-up">Powerful Features</h1>
-        <p data-aos="fade-up" data-aos-delay="100">Discover how Kaashy can simplify your mobile money and data needs</p>
+        <p data-aos="fade-up" data-aos-delay="100">Discover how Kaashy brings all your wallets together in one secure, user-friendly app.
+From swapping money between platforms to sending, saving, and buying data—Kaashy simplifies every step of your digital financial life.</p>
     </section>
 
     <!-- Main Features -->
