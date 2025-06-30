@@ -140,6 +140,9 @@
     font-size: 1rem;
     transition: var(--transition);
 }
+.contact-form button:hover {
+    background: var(--darker-color);
+}
 
 .form-group {
     position: relative;
