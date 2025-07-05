@@ -246,10 +246,14 @@ body {
 
 #android-btn i {
     font-size: 1.5rem;
-    margin-bottom: 0; 
+    margin-bottom: 3px; 
     margin-left: 0.5rem; 
-    /* line-height: 1;    */
+    line-height: 1;   
     vertical-align: middle;
+}
+
+#android-btn span {
+    font-weight: 450;
 }
 
 #apple-btn {
@@ -260,7 +264,19 @@ body {
     background: transparent;
     color: var(--primary-color);
     outline: 1px solid var(--white); 
-  outline-offset: -1px;  
+    outline-offset: -1px;  
+}
+
+#apple-btn i {
+    font-size: 1.5rem;
+    margin-bottom: 3px; 
+    margin-left: 0.5rem; 
+    line-height: 1;   
+    vertical-align: middle; /* Remove if present */
+}
+
+#apple-btn span {
+    font-weight: 450;
 }
 
 #apple-btn:hover {
@@ -271,6 +287,7 @@ body {
 #apple-btn i {
     font-size: 1.5rem;
     margin-left: 0.5rem;
+
 }
 
 
