@@ -1,2 +1,3 @@
-/pages/legal-pages/privacy.html        /privacy       301
-/pages/legal-pages/terms.html          /terms         301
+/privacy       /pages/legal-pages/privacy.html        200
+/terms         /pages/legal-pages/terms.html          200
+
