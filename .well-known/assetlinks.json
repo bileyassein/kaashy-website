@@ -1,12 +1,11 @@
 [
   {
-    "relation": [
-      "delegate_permission/common.handle_all_urls"
-    ],
+    "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
       "package_name": "com.landdev.kaashyApp",
       "sha256_cert_fingerprints": [
+        "57:F7:F1:51:C0:E5:F2:C5:CA:32:4C:B1:81:E1:36:E0:66:76:FC:A3:82:EA:A5:68:DF:86:F2:A9:F7:EE:79:E4",
         "2D:F8:CD:6E:C7:8B:93:C8:F2:9B:EB:24:0A:B4:BA:94:D0:0D:33:A4:AB:31:2B:F3:C0:70:38:11:91:36:DE:B0"
       ]
     }
